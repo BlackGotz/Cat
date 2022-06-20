@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class MCcontroller : MonoBehaviour
 {
-    public int maxSpeed = 1000;
+    public int maxSpeed = 100;
     public int maxMana = 20;
     public int maxHealth = 5;
 
     int currentHealth;
     public int health { get { return currentHealth; } }
 
-    int currentSpeed;
+    float currentSpeed;
     int currentMana;
 
     Rigidbody2D rigidbody2d;
@@ -66,11 +66,11 @@ public class MCcontroller : MonoBehaviour
 
         if ((Running == false))
         {
-            ChangeSpeed(1);
+            ChangeSpeed(1 * Time.deltaTime);
         }
         else
         {
-            ChangeSpeed(-2);
+            ChangeSpeed(-2* Time.deltaTime);
         }
 
         position.x = position.x + horizontal * Time.deltaTime * speed;
@@ -85,7 +85,7 @@ public class MCcontroller : MonoBehaviour
         Debug.Log(currentHealth + "/" + maxHealth);
     }
 
-    void ChangeSpeed(int amount)
+    void ChangeSpeed(float amount)
     {
         currentSpeed = Mathf.Clamp(currentSpeed + amount, 0, maxSpeed);
         Debug.Log(currentSpeed + "/" + maxSpeed);
