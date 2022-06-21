@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - MCcontroller
+    - ObjTransparency
     Cinemachine.dll:
     - Cinemachine.CinemachineBrain
     - Cinemachine.CinemachineConfiner
@@ -14,7 +15,6 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.IK.IKEditorManager
     - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
-    - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
@@ -72,6 +72,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3786}
     - Class: 114
       Script: {instanceID: 4168}
+    - Class: 114
+      Script: {instanceID: 5996}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -865,6 +867,12 @@ ScriptsOnlyBuild:
     className: CinemachineComposer
   - hash:
       serializedVersion: 2
+      Hash: 519bb61266268d18811add324db76b4a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ObjTransparency
+  - hash:
+      serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -896,5 +904,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: "C:/Users/marit/OneDrive/\u0420\u0430\u0431\u043E\u0447\u0438\u0439
-    \u0441\u0442\u043E\u043B/\u0420\u0430\u0431\u043E\u0442\u0430/My project (1).exe"
+  playerPath: D:/Unity Hub/My project (1)/Build/My project (1).exe
