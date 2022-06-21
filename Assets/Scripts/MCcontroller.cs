@@ -59,12 +59,7 @@ public class MCcontroller : MonoBehaviour
 
         Vector2 position = rigidbody2d.position;
 
-        if ((position.x == (position.x + horizontal * Time.deltaTime * speed)) && (position.y == position.y + vertical * Time.deltaTime * speed))      //Если зажмем shift, стоя на месте, то выносливость не будет убывать
-        {
-            Running = false;
-        }
-
-        if ((Running == false))
+        if ((Running == false))  //Если ускорения нет то выносливость восстанавливается на один за единицу времени, если есть то тратиться на 2 за единицу времени
         {
             ChangeSpeed(1 * Time.deltaTime);
         }
