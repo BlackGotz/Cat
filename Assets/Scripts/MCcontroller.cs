@@ -60,10 +60,13 @@ public class MCcontroller : MonoBehaviour
         Vector2 position = rigidbody2d.position;
 
         if ((position.x == (position.x + horizontal * Time.deltaTime * speed)) && (position.y == position.y + vertical * Time.deltaTime * speed))
-        {
-            Running = false;
+        { 
+            Running = false; 
         }
-
+        else if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+        {
+            Running = true;
+        }
 
         if ((Running == false))  //Если ускорения нет то выносливость восстанавливается на один за единицу времени, если есть то тратиться на 2 за единицу времени
         {
