@@ -71,10 +71,12 @@ public class MCcontroller : MonoBehaviour
         if ((Running == false))  //Если ускорения нет то выносливость восстанавливается на один за единицу времени, если есть то тратиться на 2 за единицу времени
         {
             ChangeSpeed(1 * Time.deltaTime);
+            speed = 2.5f;
         }
         else
         {
             ChangeSpeed(-2* Time.deltaTime);
+            speed = 5.0f;
         }
 
         position.x = position.x + horizontal * Time.deltaTime * speed;

@@ -1,3 +1,0 @@
-D:/Unity Hub/My project (1)/Library/PackageCache/com.unity.ide.visualstudio@2.0.14/Editor/COMIntegration/COMIntegration~/out/build/x64-Debug/CMakeFiles/edit_cache.dir
-D:/Unity Hub/My project (1)/Library/PackageCache/com.unity.ide.visualstudio@2.0.14/Editor/COMIntegration/COMIntegration~/out/build/x64-Debug/CMakeFiles/COMIntegration.dir
-D:/Unity Hub/My project (1)/Library/PackageCache/com.unity.ide.visualstudio@2.0.14/Editor/COMIntegration/COMIntegration~/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
