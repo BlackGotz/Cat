@@ -48,15 +48,21 @@ public class MCcontroller : MonoBehaviour
             speed = 2.5f;
             Running = false;
         }
+
+        if ((Running == false))  //Если ускорения нет то выносливость восстанавливается на один за единицу времени, если есть то тратиться на 2 за единицу времени
+        {
+            ChangeSpeed(1 * Time.deltaTime);
+            speed = 2.5f;
+        }
+        else
+        {
+            ChangeSpeed(-2 * Time.deltaTime);
+            speed = 5.0f;
+        }
     }
 
     void FixedUpdate()
     {
-        if (currentSpeed <= 0) //Если наша выносливость закончилась, ускорения не будет
-        {
-            speed = 2.5f;
-        }
-
         Vector2 position = rigidbody2d.position;
 
         if ((position.x == (position.x + horizontal * Time.deltaTime * speed)) && (position.y == position.y + vertical * Time.deltaTime * speed))
@@ -68,16 +74,6 @@ public class MCcontroller : MonoBehaviour
             Running = true;
         }
 
-        if ((Running == false))  //Если ускорения нет то выносливость восстанавливается на один за единицу времени, если есть то тратиться на 2 за единицу времени
-        {
-            ChangeSpeed(1 * Time.deltaTime);
-            speed = 2.5f;
-        }
-        else
-        {
-            ChangeSpeed(-2* Time.deltaTime);
-            speed = 5.0f;
-        }
 
         position.x = position.x + horizontal * Time.deltaTime * speed;
         position.y = position.y + vertical * Time.deltaTime * speed;
@@ -95,6 +91,11 @@ public class MCcontroller : MonoBehaviour
     {
         currentSpeed = Mathf.Clamp(currentSpeed + amount, 0, maxSpeed);
         Debug.Log(currentSpeed + "/" + maxSpeed);
+        if (currentSpeed <= 0) //Если наша выносливость закончилась, ускорения не будет
+        {
+            speed = 2.5f;
+            Running = false;
+        }
     }
 
     void ChangeMana(int amount)

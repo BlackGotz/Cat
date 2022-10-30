@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638026608721272086
-    m_Hash: 2827595768
+      ticks: 638026773455525899
+    m_Hash: 1647944700
   m_LockFileStatus:
     m_FilePath: D:/Unity Hub/Projects/Cat/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638026609624977046
-    m_Hash: 276807822
+      ticks: 638026773455525899
+    m_Hash: 1038750971
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -4792,6 +4792,18 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
+    - 1.0.0-preview.2
+    - 1.0.0-preview.3
+    - 1.0.0-preview.4
+    - 1.0.1-preview.1
+    - 1.1.2
+    - 2.0.0-preview
+    - 2.0.0-preview.1
+    - 2.0.0-preview.2
+    - 2.0.0
+    - 2.0.1-preview.1
+    - 2.0.2
+    - 3.0.1
     - 3.0.2
     compatible:
     - 3.0.2
@@ -4808,7 +4820,7 @@ m_ResolvedPackages:
     capabilities: 7
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 637846828220000000
   documentationUrl: 
   hasRepository: 1
   repository:
