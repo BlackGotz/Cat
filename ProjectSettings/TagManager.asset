@@ -9,14 +9,14 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - shadow
   - Water
   - UI
   - 
   - BackGround
   - MainCharacter
   - Confiner
-  - 
+  - Light
   - 
   - 
   - 
