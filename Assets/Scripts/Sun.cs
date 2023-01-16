@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class Sun : MonoBehaviour
 {
-    public float time, speed;
+    public float time, speed,intensity;
     public Light sunlight;
-    float intensity;
 
 
     public Color color1, color2;
