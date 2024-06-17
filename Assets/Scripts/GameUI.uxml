@@ -1,0 +1,26 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="LevelBarBackground" style="width: 25%; height: 3%; left: auto; top: auto; background-image: url(&apos;project://database/Assets/Art/Sprites/Mc/bar/cleanbar.png?fileID=21300000&amp;guid=338149f79a567bf43bd31128ce50fa71&amp;type=3#cleanbar&apos;); -unity-background-scale-mode: scale-to-fit;">
+        <ui:Label text="Lv. 0" display-tooltip-when-elided="true" name="CurrentLevel" style="-unity-text-align: middle-left; flex-direction: column; height: 100%; width: 100%; top: auto; left: 100%; font-size: 10%; color: rgb(255, 255, 255); -unity-font-style: bold; -unity-font: resource(&apos;FlatSkin/Font/Roboto-Bold&apos;);" />
+        <ui:VisualElement name="LevelBarContainer" style="width: 100%; height: 80%; position: absolute; top: 1px; left: 0;">
+            <ui:VisualElement name="LevelBar" style="background-image: url(&apos;project://database/Assets/Art/Sprites/Mc/bar/levelbar.png?fileID=21300000&amp;guid=76cbdeccfffce594e872cf4950e263f9&amp;type=3#levelbar&apos;); width: 100%; height: 100%; position: absolute; top: 0; left: 0;" />
+            <ui:Label text="0/0" display-tooltip-when-elided="true" name="Level" style="position: relative; align-items: center; -unity-text-align: middle-center; font-size: 10%; color: rgb(87, 87, 135); right: auto; left: auto; top: auto; bottom: auto; -unity-font: resource(&apos;FlatSkin/Font/Roboto-Bold&apos;); justify-content: center; -unity-font-style: bold;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="HealthBarBackground" style="background-image: url(&apos;project://database/Assets/Art/Sprites/Mc/bar/cleanbar.png?fileID=21300000&amp;guid=338149f79a567bf43bd31128ce50fa71&amp;type=3#cleanbar&apos;); width: 25%; height: 3%; flex-direction: column; position: relative; top: auto; left: auto; -unity-background-scale-mode: scale-to-fit;">
+        <ui:VisualElement name="HealthBarContainer" style="position: absolute; width: 100%; height: 80%; top: 1px; left: 0;">
+            <ui:VisualElement name="HealthBar" style="background-image: url(&apos;project://database/Assets/Art/Sprites/Mc/bar/healthbar.png?fileID=21300000&amp;guid=255ade7b88cdbbe47a191de72f3cd2e1&amp;type=3#healthbar&apos;); width: 100%; height: 100%; position: absolute;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="ManaBarBackground" style="width: 25%; height: 3%; left: auto; top: auto; background-image: url(&apos;project://database/Assets/Art/Sprites/Mc/bar/cleanbar.png?fileID=21300000&amp;guid=338149f79a567bf43bd31128ce50fa71&amp;type=3#cleanbar&apos;); -unity-background-scale-mode: scale-to-fit;">
+        <ui:VisualElement name="ManaBarContainer" style="width: 100%; height: 80%; position: absolute; top: 1px; left: 0;">
+            <ui:VisualElement name="ManaBar" style="background-image: url(&apos;project://database/Assets/Art/Sprites/Mc/bar/manabar.png?fileID=21300000&amp;guid=bbb0c169f93b6ad4d871ac5488098dad&amp;type=3#manabar&apos;); width: 100%; height: 100%; position: absolute; top: 0; left: 0;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="SpeedBarBackground" style="background-image: url(&apos;project://database/Assets/Art/Sprites/Mc/bar/cleanbar.png?fileID=21300000&amp;guid=338149f79a567bf43bd31128ce50fa71&amp;type=3#cleanbar&apos;); width: 20%; height: 2%; -unity-background-scale-mode: scale-to-fit; flex-direction: column; left: auto;">
+        <ui:VisualElement name="SpeedBarContainer" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;">
+            <ui:VisualElement name="SpeedBar" style="background-image: url(&apos;project://database/Assets/Art/Sprites/Mc/bar/speedbar.png?fileID=21300000&amp;guid=475e59321b01a5d4b9af7eb25fc03bd1&amp;type=3#speedbar&apos;); width: 100%; height: 100%; position: absolute;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="Money" style="-unity-background-scale-mode: scale-to-fit; background-image: url(&apos;project://database/Assets/Art/Sprites/Coins%20and%20similliar%20things/MonedaR.png?fileID=1752147661&amp;guid=c28d20b5533ef4d449bad70efba1d087&amp;type=3#MonedaR_0&apos;); width: 1.5%; height: 5%;" />
+    <ui:Label display-tooltip-when-elided="true" name="CountMoney" text="X 0" style="-unity-text-align: middle-left; position: relative; top: -5%; left: 1.5%; height: 5%; width: 10%; -unity-font: resource(&apos;FlatSkin/Font/Roboto-Bold&apos;); -unity-font-style: bold; color: rgb(255, 255, 255); -unity-text-outline-width: 0; font-size: 13px; flex-direction: column; white-space: nowrap; -unity-background-scale-mode: scale-to-fit;" />
+</ui:UXML>
